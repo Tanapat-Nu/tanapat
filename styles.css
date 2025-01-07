@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8;
+    color: #333;
+    background: linear-gradient(to right,#ffffff, #67b9f4);
+    padding: 0 15px;
+}
+
+header {
+    background: #6200ea;
+    color: #ffffff;
+    text-align: auto; /* เปลี่ยนเป็น center สำหรับมือถือ */
+    padding: 30px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.3);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 30px;
+    animation: fadeIn 1s ease-out;
+}
+
+.video-container {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 30px 300px;
+    padding: 20px;
+    background: #9ed0f4;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.video-container h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #2a3fff;
+}
+
+.video-wrapper {
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.video-wrapper video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.video-caption {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+    font-style: italic;
+}
+
+h2, h3 {
+    color: #2c03fb;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+.example {
+    background: #f8f9fa;
+    border-left: 5px solid #6200ea;
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.example p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+code {
+    background: #e3f2fd;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: block;
+    margin: 15px 0;
+    font-size: 1rem;
+    color: #37474f;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+a {
+    color: #2840f7;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #3700b3;
+    text-decoration: underline;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.feedback-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #f0f8ff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-container h2 {
+    font-size: 24px;
+    color: #2a3fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.feedback-container label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.feedback-container input,
+.feedback-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.feedback-container textarea {
+    resize: vertical;
+}
+
+.feedback-container button {
+    background: #6200ea;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.feedback-container button:hover {
+    background: #3700b3;
+}
+
+.feedback-container input:focus,
+.feedback-container textarea:focus {
+    outline: none;
+    border-color: #6200ea;
+}
+
+.sidebar {
+    position: fixed;
+    top: 62%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 180px;
+}
+
+.sidebar p {
+    margin: 2px 0;
+    display: block;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px;
+    background-color: #35e4ed;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border-radius: 4px;
+    text-decoration: none;
+    margin: 2px 0;
+    font-weight: 500;
+}
+
+.sidebar a:hover {
+    background-color: #54c8eb;
+}
+
+
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 1rem;
+    }
+    header h5 {
+        font-size: 0.5rem;
+    }
+
+    .container {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    .video-container {
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .video-wrapper {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .video-wrapper video {
+        width: 100%;
+        height: auto;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    .example {
+        padding: 12px;
+    }
+
+    .feedback-container {
+        padding: 15px;
+    }
+
+    .feedback-container button {
+        width: 100%;
+    }
+
+    .feedback-container input,
+    .feedback-container textarea {
+        width: 100%;
+    }
+
+    .sidebar {
+        /* top: 50%;
+        left: 0;
+        width: 100%;
+        position: relative;
+        transform: translateY(0);
+        box-shadow: none;
+        padding: 8px; */
+        display: none;
+    }
+
+    .sidebar a {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    header h1 {
+        font-size: 1.8rem; 
+    }
+
+    header h5 {
+        font-size: 0.8rem;
+    }
+
+    .container {
+        padding: 20px;
+        max-width: 700px; 
+    }
+
+    .video-container {
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    .video-wrapper {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    .sidebar {
+        display: none;
+    }
+}
